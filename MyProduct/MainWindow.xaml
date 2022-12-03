@@ -15,7 +15,7 @@
         <Rectangle Grid.Row="0" Fill="#FFB5D5CA"></Rectangle>
         <Image Source="Resources/logo.png" HorizontalAlignment="Left"></Image>
         <TextBlock x:Name="TitlePage" FontSize="20" HorizontalAlignment="Center">MyProduct</TextBlock>
-        <Button Width="40" Height="20" HorizontalAlignment="Right" Margin="60 0" Style="{StaticResource MyButton}" Content="Назад"></Button>
+        <Button Width="40" Height="20" HorizontalAlignment="Right" Margin="55 0" Style="{StaticResource MyButton}" Content="Назад" x:Name="BackBTN" Click="BackBTN_Click"/>
         <Button Width="40" Height="20" HorizontalAlignment="Right" Margin="10 0" Style="{StaticResource MyButton}" Content="Выход" Click="Button_Click"></Button>
         <Frame x:Name="MyFrame" Grid.Row="1" NavigationUIVisibility="Hidden"></Frame>
         <Rectangle Grid.Row="2" Fill="#FFB5D5CA"></Rectangle>

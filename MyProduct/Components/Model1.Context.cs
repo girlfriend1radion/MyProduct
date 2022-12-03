@@ -13,10 +13,10 @@ namespace MyProduct.Components
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class YourProductEntities : DbContext
+    public partial class тучаEntities : DbContext
     {
-        public YourProductEntities()
-            : base("name=YourProductEntities")
+        public тучаEntities()
+            : base("name=тучаEntities")
         {
         }
     
@@ -36,6 +36,7 @@ namespace MyProduct.Components
         public virtual DbSet<Status> Status { get; set; }
         public virtual DbSet<StatusReceipt> StatusReceipt { get; set; }
         public virtual DbSet<Supplier> Supplier { get; set; }
+        public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
         public virtual DbSet<Unit> Unit { get; set; }
         public virtual DbSet<User> User { get; set; }
     }

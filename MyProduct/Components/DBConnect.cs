@@ -8,6 +8,6 @@ namespace MyProduct.Components
 {
     internal class DBConnect
     {
-        public static YourProductEntities db = new YourProductEntities();
+        public static тучаEntities db = new тучаEntities();
     }
 }

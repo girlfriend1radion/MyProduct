@@ -18,9 +18,14 @@
                 <TextBlock>Пароль</TextBlock>
                 <TextBox Width="150" Margin="4 3" Padding="1" x:Name="PasswordTxt"></TextBox>
             </StackPanel>
+            <StackPanel Orientation="Horizontal">            
+            <CheckBox>Запомни меня</CheckBox>
+                <CheckBox Margin='10 0'>Показать пароль</CheckBox>
+
+            </StackPanel>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                <Button x:Name="AuthBtn" Content="Вход" Style="{StaticResource MyButton}" Margin="20 0 0 0"  Width="70" Height="20" Click="AuthBtn_Click"></Button>
-                <Button x:Name="RegistrBtn" Content="Регистрация" Style="{StaticResource MyButton}" Margin="10 0 0 0" Width="70" Height="20"></Button>
+                <Button x:Name="AuthBtn" Content="Вход" Style="{StaticResource MyButton}" Margin="5 0 0 0"  Width="70" Height="20" Click="AuthBtn_Click"></Button>
+                <Button x:Name="RegistrBtn" Content="Регистрация" Style="{StaticResource MyButton}" Margin="10 0 0 0" Width="70" Height="20" Click="RegistrBtn_Click"></Button>
             </StackPanel>
         </StackPanel>
     </Grid>

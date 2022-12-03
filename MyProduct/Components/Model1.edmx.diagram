@@ -4,32 +4,34 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="517f803a5379456daa415ca36ea54bf3" Name="Diagram1">
-        <EntityTypeShape EntityType="YourProductModel.Country" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="YourProductModel.Order" Width="1.5" PointX="3" PointY="9.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="YourProductModel.Product" Width="1.5" PointX="3" PointY="3.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="YourProductModel.ProductCountry" Width="1.5" PointX="5.25" PointY="4.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="YourProductModel.ProductOrder" Width="1.5" PointX="5.25" PointY="1.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="YourProductModel.ProductSupplier" Width="1.5" PointX="5.25" PointY="7.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="YourProductModel.ReceiptOfProduct" Width="1.5" PointX="3" PointY="18.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="YourProductModel.Role" Width="1.5" PointX="1.5" PointY="15.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="YourProductModel.Status" Width="1.5" PointX="0.75" PointY="8" IsExpanded="true" />
-        <EntityTypeShape EntityType="YourProductModel.StatusReceipt" Width="1.5" PointX="0.75" PointY="17.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="YourProductModel.Supplier" Width="1.5" PointX="0.75" PointY="19.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="YourProductModel.Unit" Width="1.5" PointX="0.75" PointY="4.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="YourProductModel.User" Width="1.5" PointX="0.75" PointY="10.375" IsExpanded="true" />
-        <AssociationConnector Association="YourProductModel.FK_ProductCountry_Country" ManuallyRouted="false" />
-        <AssociationConnector Association="YourProductModel.FK_Order_Status" ManuallyRouted="false" />
-        <AssociationConnector Association="YourProductModel.FK_Order_User" ManuallyRouted="false" />
-        <AssociationConnector Association="YourProductModel.FK_ProductOrder_Order" ManuallyRouted="false" />
-        <AssociationConnector Association="YourProductModel.FK_Product_Unit" ManuallyRouted="false" />
-        <AssociationConnector Association="YourProductModel.FK_ProductCountry_Product" ManuallyRouted="false" />
-        <AssociationConnector Association="YourProductModel.FK_ProductOrder_Product" ManuallyRouted="false" />
-        <AssociationConnector Association="YourProductModel.FK_ProductSupplier_Product" ManuallyRouted="false" />
-        <AssociationConnector Association="YourProductModel.FK_ProductSupplier_ReceiptOfProduct" ManuallyRouted="false" />
-        <AssociationConnector Association="YourProductModel.FK_ReceiptOfProduct_StatusReceipt" ManuallyRouted="false" />
-        <AssociationConnector Association="YourProductModel.FK_ReceiptOfProduct_Supplier" ManuallyRouted="false" />
-        <AssociationConnector Association="YourProductModel.FK_User_Role" ManuallyRouted="false" />
+      <Diagram DiagramId="0ab9dff7fb3a4e2c86c7ce99292338c4" Name="Diagram1">
+        <EntityTypeShape EntityType="тучаModel.Country" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="тучаModel.Order" Width="1.5" PointX="3" PointY="9.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="тучаModel.Product" Width="1.5" PointX="3" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="тучаModel.ProductCountry" Width="1.5" PointX="5.25" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="тучаModel.ProductOrder" Width="1.5" PointX="5.25" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="тучаModel.ProductSupplier" Width="1.5" PointX="5.25" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="тучаModel.ReceiptOfProduct" Width="1.5" PointX="3" PointY="19.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="тучаModel.Role" Width="1.5" PointX="1.5" PointY="15.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="тучаModel.Status" Width="1.5" PointX="0.75" PointY="8.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="тучаModel.StatusReceipt" Width="1.5" PointX="0.75" PointY="18.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="тучаModel.Supplier" Width="1.5" PointX="0.75" PointY="20.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="тучаModel.sysdiagrams" Width="1.5" PointX="7.75" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="тучаModel.Unit" Width="1.5" PointX="0.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="тучаModel.User" Width="1.5" PointX="0.75" PointY="10.625" IsExpanded="true" />
+        <AssociationConnector Association="тучаModel.FK_ProductCountry_Country" ManuallyRouted="false" />
+        <AssociationConnector Association="тучаModel.FK_Order_Status" ManuallyRouted="false" />
+        <AssociationConnector Association="тучаModel.FK_Order_User" ManuallyRouted="false" />
+        <AssociationConnector Association="тучаModel.FK_Order_User1" ManuallyRouted="false" />
+        <AssociationConnector Association="тучаModel.FK_ProductOrder_Order" ManuallyRouted="false" />
+        <AssociationConnector Association="тучаModel.FK_Product_Unit" ManuallyRouted="false" />
+        <AssociationConnector Association="тучаModel.FK_ProductCountry_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="тучаModel.FK_ProductOrder_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="тучаModel.FK_ProductSupplier_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="тучаModel.FK_ProductSupplier_ReceiptOfProduct" ManuallyRouted="false" />
+        <AssociationConnector Association="тучаModel.FK_ReceiptOfProduct_StatusReceipt" ManuallyRouted="false" />
+        <AssociationConnector Association="тучаModel.FK_ReceiptOfProduct_Supplier" ManuallyRouted="false" />
+        <AssociationConnector Association="тучаModel.FK_User_Role" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

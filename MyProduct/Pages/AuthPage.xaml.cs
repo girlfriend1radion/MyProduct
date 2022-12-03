@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -19,7 +20,8 @@ namespace MyProduct.Pages
 {
     class UserRole
     {
-        public static int Info { get; set; } }
+        public static int Info { get; set; } 
+    }
     /// <summary>
     /// Логика взаимодействия для AuthPage.xaml
     /// </summary>
@@ -43,20 +45,20 @@ namespace MyProduct.Pages
                 {
                     if (UserPath.RoleId == 2)
                     {
-                        MessageBox.Show("Admin");
+                        MessageBox.Show("Вы зашли в систему как Администратор");
                         UserRole.Info = UserPath.Role.Id;
                         this.NavigationService.Navigate(new MenuPage());
 
                     }
                     else if (UserPath.RoleId == 4)
                     {
-                        MessageBox.Show("Admin");
+                        MessageBox.Show("Вы зашли в систему как Кладовщик");
                         UserRole.Info = UserPath.Role.Id;
                         this.NavigationService.Navigate(new MenuPage());
                     }
                     else if (UserPath.RoleId == 3)
                     {
-                        MessageBox.Show("Admin");
+                        MessageBox.Show("Вы зашли в систему как Менеджер");
                         UserRole.Info = UserPath.Role.Id;
                         this.NavigationService.Navigate(new MenuPage());
                     }
@@ -66,17 +68,21 @@ namespace MyProduct.Pages
                         this.NavigationService.Navigate(new MenuPage());
                         MessageBox.Show("Покупатель");
                     }
-
-                   
-                    
                 }
                 else
                 {
-                    MessageBox.Show("Такого пользователя нет");
+                    MessageBox.Show("Такого пользователя нет", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
 
             }
 
         }
+
+        private void RegistrBtn_Click(object sender, RoutedEventArgs e)
+        {
+            Navigation.NextPage(new Nav("Регистрация", new RegistrPage()));
+        }
+
+
     }
 }

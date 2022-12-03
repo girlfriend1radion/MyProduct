@@ -8,7 +8,7 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="MenuPage">
 
-    <Grid>
+    <Grid Height="450" VerticalAlignment="Bottom">
         <Grid.RowDefinitions>
             <RowDefinition Height="37*"/>
             <RowDefinition Height="379*"/>
@@ -18,11 +18,15 @@
         <StackPanel>
             <StackPanel Orientation="Horizontal">
                 <TextBlock Style="{StaticResource MyTextBlock}" Margin="0 6">Сортировка</TextBlock>
-                <ComboBox Width="50" Height="25" Margin="10 0 0 0" >
+                <ComboBox Width="60" Height="25" Margin="10 0 0 0"  x:Name="SortCb" SelectionChanged="SortCb_SelectionChanged" >
                     <ComboBoxItem>По умолчанию</ComboBoxItem>
                     <ComboBoxItem>По возрастанию</ComboBoxItem>
                     <ComboBoxItem>По убыванию</ComboBoxItem>
                 </ComboBox>
+
+                <TextBlock  Style="{StaticResource MyTextBlock}" Margin="5">Название или описание</TextBlock>
+                <TextBox Width="150" x:Name="NameDisSearchTb" TextChanged="NameDisSearchTb_TextChanged" ></TextBox>
+                <Button Style="{StaticResource MyButton}"  Margin="10 10">Добавить</Button>
             </StackPanel>
         </StackPanel>
         <ListView Grid.Row="1" x:Name="listProduct" SelectionChanged="listProduct_SelectionChanged" Loaded="listProduct_Loaded"> 

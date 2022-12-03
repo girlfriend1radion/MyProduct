@@ -1,4 +1,5 @@
-﻿using MyProduct.Pages;
+﻿using MyProduct.Components;
+using MyProduct.Pages;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -30,6 +31,11 @@ namespace MyProduct
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             Close();
+        }
+
+        private void BackBTN_Click(object sender, RoutedEventArgs e)
+        {
+            Navigation.BackPage();
         }
     }
 }

@@ -18,6 +18,7 @@ namespace MyProduct.Components
         public User()
         {
             this.Order = new HashSet<Order>();
+            this.Order1 = new HashSet<Order>();
         }
     
         public int Id { get; set; }
@@ -32,6 +33,8 @@ namespace MyProduct.Components
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Order> Order { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Order> Order1 { get; set; }
         public virtual Role Role { get; set; }
     }
 }
